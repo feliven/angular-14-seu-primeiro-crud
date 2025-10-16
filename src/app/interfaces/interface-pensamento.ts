@@ -1,5 +1,5 @@
 export interface InterfacePensamento {
-  id: number;
+  id?: number; // permite que json-server crie id automaticamente
   conteudo: string;
   autoria: string;
   modelo: string;
