@@ -10,5 +10,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './listar-pensamento.css',
 })
 export class ListarPensamento {
-  listaPensamentos = [{ conteudo: 'I love Angular', autoria: 'Nay', modelo: 'modelo3' }];
+  listaPensamentos = [
+    { conteudo: 'I love Angular', autoria: 'Nay', modelo: 'modelo3' },
+    { conteudo: 'I love Angulars', autoria: 'Naya', modelo: 'modelo2' },
+    { conteudo: 'I love Angulares', autoria: 'Nay@', modelo: 'modelo1' },
+  ];
 }
