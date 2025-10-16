@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { Pensamento } from '../pensamento/pensamento';
-import { CommonModule } from '@angular/common';
+import { InterfacePensamento } from '../../../interfaces/interface-pensamento';
 
 @Component({
   selector: 'app-listar-pensamento',
@@ -10,5 +11,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './listar-pensamento.css',
 })
 export class ListarPensamento {
-  listaPensamentos = [];
+  listaPensamentos: InterfacePensamento[] = [];
 }
