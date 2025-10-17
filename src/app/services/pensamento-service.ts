@@ -18,4 +18,14 @@ export class PensamentoService {
   setPensamento(pensamento: InterfacePensamento) {
     return this.http.post<InterfacePensamento>(this.enderecoAPI, pensamento);
   }
+
+  buscarPorId(id: number): Observable<InterfacePensamento> {
+    const url = `${this.enderecoAPI}/${id}`;
+    return this.http.get<InterfacePensamento>(url);
+  }
+
+  deletePensamento(id: number): Observable<InterfacePensamento> {
+    const url = `${this.enderecoAPI}/${id}`;
+    return this.http.delete<InterfacePensamento>(url);
+  }
 }
