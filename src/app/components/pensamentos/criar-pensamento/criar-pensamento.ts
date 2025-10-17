@@ -27,5 +27,6 @@ export class CriarPensamento {
 
   cancelar() {
     console.log('CANCELLED!');
+    this.router.navigate(['/']);
   }
 }
